@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Same Binary Tree:
+- Recursively compare corresponding nodes
+- Check if both nodes are null (equal) or one is null (not equal)
+- Compare values and recursively check left and right subtrees
+- All comparisons must be true for trees to be same
+- Time: O(n), Space: O(h)
+"""
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):

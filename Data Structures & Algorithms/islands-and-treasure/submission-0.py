@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Islands And Treasure:
+• Multi-source DFS: start from all treasure gates (value 0) simultaneously
+• For each gate, use DFS to propagate distances to all reachable empty rooms
+• Only update a cell if current distance is smaller than existing value
+• This ensures shortest distance from any gate is stored
+• Stop DFS when hitting walls (-1) or already shorter distances
+• Time: O(m*n), Space: O(m*n) for recursion stack
+"""
+
 class Solution:
     def islandsAndTreasure(self, grid: List[List[int]]) -> None:
         def dfs(grid,i,j,count):

@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Greatest Common Divisor Of Strings:
+• Try all possible divisor lengths from largest to smallest
+• For each length, check if it divides both string lengths evenly
+• Verify that repeating the substring creates both original strings
+• Return first valid divisor (which will be the largest/greatest)
+• If no divisor found, return empty string
+• Time: O(min(m,n) * (m+n)), Space: O(1)
+"""
+
 class Solution:
     def gcdOfStrings(self, str1: str, str2: str) -> str:
         len1, len2 = len(str1), len(str2)

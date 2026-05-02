@@ -5,7 +5,17 @@
 #         self.left = left
 #         self.right = right
 
-class Solution:   
+"""
+REVISION NOTES - Subtree of a Binary Tree:
+• Two-step approach: check if trees are same + recursively check subtrees
+• Helper function sameTree() checks if two trees are identical
+• Main function checks if subRoot matches current node or exists in left/right subtrees
+• Base cases: null subRoot is always subtree, null root with non-null subRoot is false
+• Recursive calls on left and right children to find matching subtree
+• Time: O(m*n) where m,n are sizes of trees, Space: O(h) for recursion depth
+"""
+
+class Solution:
     def isSubtree(self, root: Optional[TreeNode], subRoot: Optional[TreeNode]) -> bool:
 
 

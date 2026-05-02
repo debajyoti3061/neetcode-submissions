@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Combinations:
+- Use backtracking to generate all k-element combinations
+- Build combination incrementally, backtrack when complete
+- Use start index to avoid duplicate combinations
+- Add to result when combination size reaches k
+- Time: O(C(n,k)), Space: O(k)
+"""
+
 class Solution:
     def combine(self, n: int, k: int) -> List[List[int]]:
         res = []

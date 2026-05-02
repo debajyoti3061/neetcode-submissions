@@ -1,4 +1,13 @@
 """
+REVISION NOTES - Copy Linked List With Random Pointer:
+- First pass: create copy nodes and map original to copy
+- Second pass: set next and random pointers using the map
+- Use hashmap to maintain original to copy node mapping
+- Handle null pointers carefully
+- Time: O(n), Space: O(n)
+"""
+
+"""
 # Definition for a Node.
 class Node:
     def __init__(self, x: int, next: 'Node' = None, random: 'Node' = None):

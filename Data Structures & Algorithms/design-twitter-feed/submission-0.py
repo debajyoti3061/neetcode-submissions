@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Design Twitter Feed:
+- Use max heap to merge timelines from multiple users
+- Store tweets with timestamp for ordering
+- Maintain follow relationships using hashmap
+- Efficiently retrieve top 10 tweets from merged timeline
+- Time: O(k log k) for getNewsFeed, Space: O(n)
+"""
+
 class Twitter:
 
     def __init__(self):

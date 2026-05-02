@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Permutations:
+- Use backtracking with visited array or by swapping
+- Build permutation one element at a time
+- Mark elements as used, backtrack by unmarking
+- Add complete permutation to result
+- Time: O(n!), Space: O(n)
+"""
+
 class Solution:
     def permute(self, nums: List[int]) -> List[List[int]]:
         res = []

@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Implement Stack Using Queues:
+• Use single queue (deque) to simulate stack behavior
+• Push: Simply append to queue
+• Pop: Rotate queue n-1 times to bring last element to front, then pop
+• Top: Access last element directly (queue[-1])
+• Empty: Check if queue length is 0
+• Time: Push O(1), Pop O(n), Top O(1), Empty O(1), Space: O(n)
+"""
+
 class MyStack:
 
     def __init__(self):

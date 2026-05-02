@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Minimum Window With Characters:
+- Use two hashmaps: one for target characters, one for window
+- Expand window until all target characters included
+- Then shrink from left while maintaining validity
+- Track minimum valid window found
+- Time: O(n), Space: O(m) where m is target string length
+"""
+
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
         if t == "" :

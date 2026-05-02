@@ -1,3 +1,14 @@
+"""
+REVISION NOTES - Search 2D Matrix:
+• Two-phase binary search approach
+• Phase 1: Binary search on rows to find correct row
+• Compare target with first and last element of each row
+• Phase 2: Binary search within the identified row
+• Leverages sorted property of both rows and columns
+• Alternative: Treat as 1D array with coordinate mapping
+• Time: O(log m + log n), Space: O(1)
+"""
+
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         rows, cols = len(matrix), len(matrix[0])

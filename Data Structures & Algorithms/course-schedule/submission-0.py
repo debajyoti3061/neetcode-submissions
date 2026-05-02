@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Course Schedule:
+- Model as directed graph, detect cycles using DFS
+- Use three states: unvisited, visiting, visited
+- If we reach a visiting node, cycle detected
+- Mark nodes as visited after processing all neighbors
+- Time: O(V+E), Space: O(V)
+"""
+
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
         preMap = {i:[]  for i in range(numCourses)}

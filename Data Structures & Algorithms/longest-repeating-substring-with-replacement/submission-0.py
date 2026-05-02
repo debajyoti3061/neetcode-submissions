@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Longest Repeating Substring With Replacement:
+• Sliding window with character frequency tracking
+• Expand window by moving right pointer, count character frequencies
+• Window is valid if (window_size - max_frequency) <= k
+• When invalid, shrink window from left until valid again
+• Track maximum valid window size seen
+• Time: O(n), Space: O(1) - at most 26 characters
+"""
+
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
         count = {}

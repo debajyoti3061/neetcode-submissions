@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Word Break:
+- Use backtracking or dynamic programming
+- For each position, try all possible words that start there
+- Recursively solve for remaining string
+- Use memoization to avoid recomputing subproblems
+- Time: O(n^2), Space: O(n)
+"""
+
 class Solution:
     def wordBreak(self, s: str, wordDict: List[str]) -> bool:
         dp = [False] * (len(s)+1)

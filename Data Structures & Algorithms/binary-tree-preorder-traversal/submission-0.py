@@ -1,3 +1,11 @@
+"""
+REVISION NOTES - Binary Tree Preorder Traversal:
+- Recursive: root -> left subtree -> right subtree
+- Iterative: use stack, push right child first
+- Useful for copying/serializing trees
+- Time: O(n), Space: O(h) for recursion stack
+"""
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):

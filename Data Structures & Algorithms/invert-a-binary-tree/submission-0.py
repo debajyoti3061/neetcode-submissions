@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Invert A Binary Tree:
+- Recursively swap left and right children of each node
+- Base case: return null for null nodes
+- Swap children, then recursively invert subtrees
+- Can be done iteratively using queue/stack
+- Time: O(n), Space: O(h)
+"""
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):

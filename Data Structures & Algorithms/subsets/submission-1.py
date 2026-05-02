@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Subsets:
+- Use backtracking to generate all possible subsets
+- For each element, choose to include or exclude it
+- Build subset incrementally and backtrack
+- Add current subset to result at each recursive call
+- Time: O(2^n), Space: O(n)
+"""
+
 class Solution:
     def subsets(self, nums: List[int]) -> List[List[int]]:
         res = []

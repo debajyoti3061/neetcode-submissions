@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Pacific Atlantic Water Flow:
+• Use DFS from ocean borders to find all reachable cells
+• Start DFS from Pacific borders (top row, left column)
+• Start DFS from Atlantic borders (bottom row, right column)
+• Water flows from higher to lower or equal height
+• Find intersection of cells reachable from both oceans
+• Time: O(m*n), Space: O(m*n)
+"""
+
 class Solution:
     def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
         ROWS, COLS = len(heights), len(heights[0])

@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Subsets Ii:
+- Sort array first to handle duplicates
+- Use backtracking similar to subsets
+- Skip duplicate elements at same recursion level
+- Only process duplicate if previous same element was included
+- Time: O(2^n), Space: O(n)
+"""
+
 class Solution:
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
         res = []

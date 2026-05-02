@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Binary Tree Right Side View:
+- Use level-order traversal or DFS with level tracking
+- For each level, record the rightmost node
+- In DFS, visit right subtree before left
+- Track maximum level seen to avoid duplicates
+- Time: O(n), Space: O(h)
+"""
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):

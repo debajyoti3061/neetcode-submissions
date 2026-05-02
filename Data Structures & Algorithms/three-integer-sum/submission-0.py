@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Three Integer Sum:
+- Sort array first to enable two-pointer technique
+- Fix first element, use two pointers for remaining two elements
+- Skip duplicates to avoid duplicate triplets
+- For each fixed element, find pairs that sum to negative of fixed element
+- Time: O(n^2), Space: O(1)
+"""
+
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         nums.sort()

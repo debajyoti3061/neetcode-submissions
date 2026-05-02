@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Surrounded Regions:
+• Reverse thinking: find 'O's that are NOT surrounded (connected to border)
+• Mark all border-connected 'O's as temporary 'T' using DFS
+• Convert remaining 'O's to 'X' (these are surrounded)
+• Convert 'T's back to 'O' (these are not surrounded)
+• Key insight: start DFS from border cells to find unsurrounded regions
+• Time: O(m*n), Space: O(m*n) for recursion stack in worst case
+"""
+
 class Solution:
     def solve(self, board: List[List[str]]) -> None:
         ROWS , COLS = len(board), len(board[0])

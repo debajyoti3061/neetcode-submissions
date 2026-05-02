@@ -1,3 +1,14 @@
+"""
+REVISION NOTES - Unique Paths II:
+• Dynamic programming with obstacle handling
+• dp[i][j] = number of ways to reach cell (i,j)
+• Base case: dp[0][0] = 1 if no obstacle, else return 0
+• Initialize first row and column considering obstacles
+• For each cell: if obstacle, dp[i][j] = 0; else dp[i][j] = dp[i-1][j] + dp[i][j-1]
+• Key insight: obstacles block paths, so set those cells to 0
+• Time: O(m*n), Space: O(m*n)
+"""
+
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         if obstacleGrid[0][0] == 1:

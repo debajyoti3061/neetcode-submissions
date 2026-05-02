@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Generate Parentheses:
+- Use backtracking to generate valid combinations
+- Track count of open and close parentheses
+- Add open parenthesis if count < n
+- Add close parenthesis if close_count < open_count
+- Time: O(4^n / sqrt(n)), Space: O(n)
+"""
+
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         stack = []

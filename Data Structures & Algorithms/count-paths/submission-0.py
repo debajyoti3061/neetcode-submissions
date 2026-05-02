@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Count Paths:
+- dp[i][j] = number of paths to reach cell (i,j)
+- Can only move right or down
+- dp[i][j] = dp[i-1][j] + dp[i][j-1]
+- Initialize first row and column to 1
+- Time: O(m*n), Space: O(m*n)
+"""
+
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
         dp = [[0] * n for _ in range (m)]

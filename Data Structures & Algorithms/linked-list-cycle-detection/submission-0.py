@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Linked List Cycle Detection:
+- Use Floyd's cycle detection (tortoise and hare)
+- Slow pointer moves one step, fast pointer moves two steps
+- If cycle exists, fast will eventually meet slow
+- If fast reaches null, no cycle exists
+- Time: O(n), Space: O(1)
+"""
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):

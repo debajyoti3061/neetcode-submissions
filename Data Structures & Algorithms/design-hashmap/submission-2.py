@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Design Hashmap:
+- Use array with direct indexing for simple implementation
+- Handle collisions with chaining or open addressing
+- Initialize with default value (-1 for not found)
+- All operations should be O(1) average case
+- Space: O(capacity)
+"""
+
 class MyHashMap:
 
     def __init__(self):

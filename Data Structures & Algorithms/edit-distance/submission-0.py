@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Edit Distance:
+- Use 2D DP: dp[i][j] = min edits to transform word1[0:i] to word2[0:j]
+- If characters match: dp[i][j] = dp[i-1][j-1]
+- If don't match: dp[i][j] = 1 + min(insert, delete, replace)
+- Initialize base cases for empty strings
+- Time: O(m*n), Space: O(m*n)
+"""
+
 class Solution:
     def minDistance(self, word1: str, word2: str) -> int:
         m,n = len(word1), len(word2)

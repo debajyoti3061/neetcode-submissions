@@ -1,3 +1,14 @@
+"""
+REVISION NOTES - Permutation String (Permutation In String):
+• Sliding window with character frequency matching
+• Count frequencies of s1 and initial window of s2
+• Track number of character frequencies that match between windows
+• Slide window: add new character, remove old character, update matches
+• If all 26 character frequencies match, found permutation
+• Optimized to avoid comparing entire frequency arrays each time
+• Time: O(n), Space: O(1)
+"""
+
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
         if len(s1) > len(s2):

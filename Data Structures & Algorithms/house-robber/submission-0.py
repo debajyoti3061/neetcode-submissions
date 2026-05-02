@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - House Robber:
+- For each house, choose to rob or not rob
+- If rob current, can't rob previous: dp[i] = nums[i] + dp[i-2]
+- If don't rob current: dp[i] = dp[i-1]
+- Take maximum of both choices
+- Time: O(n), Space: O(1)
+"""
+
 class Solution:
     def rob(self, nums: List[int]) -> int:
         if not nums:

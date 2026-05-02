@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Subarray Sum Equals K:
+• Prefix sum + hashmap approach to find subarrays with sum = k
+• Key insight: if current_sum - k exists in map, we found valid subarray(s)
+• Track frequency of each prefix sum to handle multiple occurrences
+• Initialize map with {0: 1} to handle subarrays starting from index 0
+• For each element: check if (current_sum - k) exists, then update map
+• Time: O(n), Space: O(n)
+"""
+
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
         count = 0

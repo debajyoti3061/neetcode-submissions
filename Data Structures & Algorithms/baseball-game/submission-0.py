@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Baseball Game:
+- Use stack to track valid scores
+- Handle operations: + (sum last two), D (double last), C (cancel last)
+- For numbers, convert to int and push to stack
+- Return sum of all elements in stack
+- Time: O(n), Space: O(n)
+"""
+
 class Solution:
     def calPoints(self, operations: List[str]) -> int:
         stack = []

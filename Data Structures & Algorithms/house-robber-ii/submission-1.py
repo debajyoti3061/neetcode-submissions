@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - House Robber Ii:
+- Houses arranged in circle, so first and last can't both be robbed
+- Solve two subproblems: rob houses 0 to n-2, and houses 1 to n-1
+- Return maximum of both solutions
+- Use House Robber I solution for each subproblem
+- Time: O(n), Space: O(1)
+"""
+
 class Solution:
     def rob(self, nums: List[int]) -> int:
         def helper(nums):

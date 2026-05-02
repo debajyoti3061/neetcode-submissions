@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Minimum Size Subarray Sum:
+• Sliding window approach with two pointers
+• Expand window by moving right pointer, add elements to total
+• When total >= target, try to shrink window from left
+• Track minimum window size that satisfies condition
+• Continue until right pointer reaches end
+• Time: O(n), Space: O(1)
+"""
+
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         l, total = 0 , 0

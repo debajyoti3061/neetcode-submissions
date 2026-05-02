@@ -1,3 +1,11 @@
+"""
+REVISION NOTES - Is Anagram:
+- Sort both strings and compare, or use character frequency count
+- Two strings are anagrams if they have same character frequencies
+- Can use array of size 26 for lowercase letters
+- Time: O(n log n) for sorting, O(n) for counting
+"""
+
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):

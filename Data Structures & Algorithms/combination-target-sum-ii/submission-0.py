@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Combination Target Sum Ii:
+- Sort candidates to handle duplicates
+- Use backtracking with start index to avoid reusing elements
+- Skip duplicates at same recursion level
+- Each element can only be used once
+- Time: O(2^n), Space: O(n)
+"""
+
 class Solution:
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
         candidates.sort()

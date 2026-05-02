@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Non-Cyclical Number (Happy Number):
+• Use set to detect cycles in the sum of squares sequence
+• Keep computing sum of squares of digits until reaching 1 or detecting cycle
+• If we reach 1, number is happy; if we detect cycle, it's not happy
+• Helper function extracts digits and computes sum of their squares
+• Floyd's cycle detection could be used for O(1) space optimization
+• Time: O(log n), Space: O(log n)
+"""
+
 class Solution:
     def isHappy(self, n: int) -> bool:
         visit = set()

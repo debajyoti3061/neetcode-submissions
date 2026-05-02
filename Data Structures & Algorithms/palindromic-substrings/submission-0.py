@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Palindromic Substrings:
+• Expand around centers approach to count all palindromic substrings
+• For each position, check for odd-length palindromes (center at i)
+• Also check for even-length palindromes (center between i and i+1)
+• Expand outward while characters match and count valid palindromes
+• Sum counts from all possible centers
+• Time: O(n²), Space: O(1)
+"""
+
 class Solution:
     def countSubstrings(self, s: str) -> int:
         res = 0

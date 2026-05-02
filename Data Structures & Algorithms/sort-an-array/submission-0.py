@@ -1,3 +1,14 @@
+"""
+REVISION NOTES - Sort An Array:
+• Merge sort implementation with divide-and-conquer approach
+• Recursively divide array into halves until single elements
+• Merge sorted halves back together in sorted order
+• Use temporary arrays for left and right subarrays during merge
+• Three-pointer technique: one for result position, two for subarray positions
+• Handle remaining elements from either subarray after main merge
+• Time: O(n log n), Space: O(n)
+"""
+
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
         

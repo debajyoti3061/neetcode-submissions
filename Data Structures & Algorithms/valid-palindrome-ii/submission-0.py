@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Valid Palindrome II:
+• Two-pointer approach with one deletion allowed
+• Start from both ends, when mismatch found: try skipping left OR right character
+• Helper function checks if substring is palindrome without further deletions
+• Key insight: at most one deletion means we have two choices when mismatch occurs
+• If either choice (skip left or skip right) results in palindrome, return True
+• Time: O(n), Space: O(1)
+"""
+
 class Solution:
     def validPalindrome(self, s: str) -> bool:
         i = 0

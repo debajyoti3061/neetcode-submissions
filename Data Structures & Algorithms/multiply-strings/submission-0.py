@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Multiply Strings:
+• Simulate grade school multiplication algorithm
+• Reverse both strings to process from least significant digit
+• For each digit pair, multiply and add to result array at correct position
+• Handle carry by dividing by 10 and adding to next position
+• Remove leading zeros from final result
+• Time: O(m*n), Space: O(m+n)
+"""
+
 class Solution:
     def multiply(self, num1: str, num2: str) -> str:
         if "0" in [num1, num2]:

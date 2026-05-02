@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Rotate Matrix:
+• Rotate matrix 90 degrees clockwise in-place using layer-by-layer approach
+• Process matrix from outer layer to inner layer (l to r pointers)
+• For each layer, rotate 4 elements at a time in a cycle
+• Save top-left, then move: bottom-left → top-left → top-right → bottom-right → bottom-left
+• Continue for all positions in current layer, then move to inner layer
+• Time: O(n²), Space: O(1)
+"""
+
 class Solution:
     def rotate(self, matrix: List[List[int]]) -> None:
         l, r = 0, len(matrix)-1

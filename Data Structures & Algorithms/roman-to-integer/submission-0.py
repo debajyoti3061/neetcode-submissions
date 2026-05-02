@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Roman To Integer:
+• Use hashmap to store roman numeral values
+• Iterate through string, check if current character should be subtracted
+• If current value < next value, subtract (handles IV, IX, XL, XC, CD, CM cases)
+• Otherwise, add the value normally
+• This handles subtractive notation automatically
+• Time: O(n), Space: O(1)
+"""
+
 class Solution:
     def romanToInt(self, s: str) -> int:
         roman = {

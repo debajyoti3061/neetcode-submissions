@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Remove Node From End Of Linked List:
+- Use two pointers with n+1 gap between them
+- Move both pointers until second reaches end
+- First pointer will be at node before target
+- Remove target node by updating links
+- Time: O(n), Space: O(1)
+"""
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):

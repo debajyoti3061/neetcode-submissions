@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Longest Palindromic Substring:
+- Expand around centers approach (odd and even length palindromes)
+- For each position, expand outward while characters match
+- Track longest palindrome found so far
+- Handle both odd-length and even-length palindromes
+- Time: O(n^2), Space: O(1)
+"""
+
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         resInd = 0

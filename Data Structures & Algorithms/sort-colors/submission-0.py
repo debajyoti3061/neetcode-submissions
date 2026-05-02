@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Sort Colors:
+• Counting sort approach for 3 colors (0, 1, 2)
+• Count frequency of each color in first pass
+• Reconstruct array by placing colors in order based on counts
+• Alternative: Dutch National Flag algorithm with 3 pointers for O(1) space
+• This solution uses O(1) extra space for counting array
+• Time: O(n), Space: O(1)
+"""
+
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
         """

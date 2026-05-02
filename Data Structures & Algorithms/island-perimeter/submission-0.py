@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Island Perimeter:
+• Use DFS to traverse the island and count perimeter edges
+• For each land cell, check all 4 directions
+• If neighbor is water/out-of-bounds, it contributes 1 to perimeter
+• If neighbor is visited land, it contributes 0 to perimeter
+• Use visited set to avoid counting same cell multiple times
+• Time: O(m*n), Space: O(m*n)
+"""
+
 class Solution:
     def islandPerimeter(self, grid: List[List[int]]) -> int:
         rows, cols = len(grid), len(grid[0])

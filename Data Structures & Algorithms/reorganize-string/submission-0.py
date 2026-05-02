@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Reorganize String:
+• Use max-heap to always pick character with highest frequency
+• Avoid placing same character consecutively by using previous character buffer
+• Pop most frequent character, add to result, store in prev if count > 0
+• Push previous character back to heap before processing next
+• If heap is empty but prev exists, reorganization is impossible
+• Time: O(n log k), Space: O(k) where k is unique characters
+"""
+
 class Solution:
     def reorganizeString(self, s: str) -> str:
         count = Counter(s)

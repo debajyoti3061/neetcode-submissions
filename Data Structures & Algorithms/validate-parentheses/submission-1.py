@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Validate Parentheses:
+- Use stack to track opening brackets
+- Push opening brackets onto stack
+- For closing brackets, check if stack top matches
+- Stack should be empty at end for valid parentheses
+- Time: O(n), Space: O(n)
+"""
+
 class Solution:
     def isValid(self, s: str) -> bool:
         stack = []

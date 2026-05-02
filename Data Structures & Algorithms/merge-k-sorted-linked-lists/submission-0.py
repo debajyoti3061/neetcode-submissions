@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Merge K Sorted Linked Lists:
+- Use divide and conquer approach
+- Recursively merge pairs of lists
+- Reduce k lists to k/2, then k/4, until one list remains
+- Use merge two sorted lists as helper function
+- Time: O(n log k), Space: O(log k)
+"""
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):

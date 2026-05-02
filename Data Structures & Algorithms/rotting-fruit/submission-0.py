@@ -1,5 +1,16 @@
 from collections import deque
 
+"""
+REVISION NOTES - Rotting Fruit (Rotting Oranges):
+• Multi-source BFS: start from all initially rotten oranges simultaneously
+• Count fresh oranges and add all rotten oranges to queue initially
+• Use BFS to spread rot level by level (each level represents 1 minute)
+• For each rotten orange, check 4 adjacent cells and rot fresh oranges
+• Track time by processing one complete level at a time
+• Return time if all oranges rot, -1 if some remain fresh
+• Time: O(m*n), Space: O(m*n)
+"""
+
 class Solution:
     def orangesRotting(self, grid: List[List[int]]) -> int:
         maxTime = 0

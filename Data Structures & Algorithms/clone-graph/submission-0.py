@@ -1,4 +1,13 @@
 """
+REVISION NOTES - Clone Graph:
+- Use DFS with hashmap to track original to clone mapping
+- For each node, create clone and recursively clone neighbors
+- Use hashmap to avoid infinite loops and duplicate clones
+- Return clone of starting node
+- Time: O(V+E), Space: O(V)
+"""
+
+"""
 # Definition for a Node.
 class Node:
     def __init__(self, val = 0, neighbors = None):

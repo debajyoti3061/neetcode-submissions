@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Longest Common Subsequence:
+- dp[i][j] = LCS length for text1[0:i] and text2[0:j]
+- If characters match: dp[i][j] = 1 + dp[i-1][j-1]
+- If don't match: dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+- Build table bottom-up or use memoization
+- Time: O(m*n), Space: O(m*n)
+"""
+
 class Solution:
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         dp = [[0] * (len(text2)+1) for _ in range(len(text1)+1)]

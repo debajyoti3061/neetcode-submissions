@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Combinations Of A Phone Number:
+- Use backtracking with digit-to-letters mapping
+- For each digit, try all possible letters
+- Build string incrementally, backtrack when complete
+- Add to result when string length equals digits length
+- Time: O(4^n), Space: O(n)
+"""
+
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
         res = []

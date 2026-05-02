@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Binary Tree Diameter:
+- For each node, calculate longest path through that node
+- Path through node = left height + right height
+- Recursively calculate heights and update global maximum
+- Use global variable to track maximum diameter seen
+- Time: O(n), Space: O(h)
+"""
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):

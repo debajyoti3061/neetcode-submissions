@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Valid Binary Search Tree:
+- Use inorder traversal to check if values are in ascending order
+- Or recursively check with min/max bounds for each subtree
+- Left subtree values must be less than root
+- Right subtree values must be greater than root
+- Time: O(n), Space: O(h)
+"""
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):

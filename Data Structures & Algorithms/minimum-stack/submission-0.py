@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Minimum Stack:
+• Use two stacks: main stack for values, minStack for tracking minimums
+• Push: add value to main stack, add current minimum to minStack
+• Pop: remove from both stacks simultaneously
+• getMin: return top of minStack (current minimum)
+• Maintains O(1) time for all operations
+• Time: O(1) for all operations, Space: O(n)
+"""
+
 class MinStack:
 
     def __init__(self):

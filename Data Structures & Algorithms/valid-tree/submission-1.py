@@ -1,3 +1,14 @@
+"""
+REVISION NOTES - Valid Tree:
+• DFS approach to check if graph forms a valid tree
+• Valid tree conditions: connected + no cycles + exactly n-1 edges
+• Build adjacency list from edges, then DFS from node 0
+• Track visited nodes and previous node to avoid going back
+• If we visit an already visited node (not previous), there's a cycle
+• After DFS, check if all nodes were visited (connectivity)
+• Time: O(V + E), Space: O(V + E)
+"""
+
 class Solution:
     def validTree(self, n: int, edges: List[List[int]]) -> bool:
         if not n:

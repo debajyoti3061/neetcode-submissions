@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Decode Ways:
+- Use DP: dp[i] = ways to decode string[0:i]
+- Check single digit (1-9) and double digit (10-26) decodings
+- dp[i] = dp[i-1] (if valid single) + dp[i-2] (if valid double)
+- Handle edge cases with '0'
+- Time: O(n), Space: O(n)
+"""
+
 class Solution:
     def numDecodings(self, s: str) -> int:
         if not s: return 0

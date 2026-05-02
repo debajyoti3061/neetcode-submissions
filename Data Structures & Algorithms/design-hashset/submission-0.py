@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Design Hashset:
+- Use array or list to store elements
+- For add: check if exists before adding
+- For remove: check if exists before removing
+- For contains: linear search or use hash function
+- Time: O(1) average with proper hashing, Space: O(n)
+"""
+
 class MyHashSet:
 
     def __init__(self):

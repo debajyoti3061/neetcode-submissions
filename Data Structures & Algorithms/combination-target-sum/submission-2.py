@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Combination Target Sum:
+- Use backtracking with remaining target sum
+- For each candidate, subtract from target and recurse
+- Allow reusing same candidate (start index doesn't change)
+- Backtrack by removing last added candidate
+- Time: O(2^t) where t is target, Space: O(t)
+"""
+
 class Solution:
     def combinationSum(self, nums: List[int], target: int) -> List[List[int]]:
         result = []

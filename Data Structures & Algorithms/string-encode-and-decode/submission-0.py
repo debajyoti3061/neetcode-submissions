@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - String Encode and Decode:
+• Length-prefixed encoding: format is "length#string" for each string
+• Encode: concatenate length + "#" + string for each input string
+• Decode: parse length before "#", then extract exact number of characters
+• Handles edge cases like empty strings and strings containing "#"
+• Key insight: use length prefix to avoid delimiter conflicts
+• Time: O(n) for both encode/decode, Space: O(1) extra
+"""
+
 class Solution:
 
     def encode(self, strs: List[str]) -> str:

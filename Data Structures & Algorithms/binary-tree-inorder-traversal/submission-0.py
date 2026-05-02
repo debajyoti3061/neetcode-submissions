@@ -1,3 +1,11 @@
+"""
+REVISION NOTES - Binary Tree Inorder Traversal:
+- Recursive: left subtree -> root -> right subtree
+- Iterative: use stack to simulate recursion
+- For BST, inorder gives sorted sequence
+- Time: O(n), Space: O(h) for recursion stack
+"""
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):

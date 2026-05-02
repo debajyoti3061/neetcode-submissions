@@ -1,3 +1,13 @@
+"""
+REVISION NOTES - Implement Queue Using Stacks:
+• Use two stacks: s1 for input, s2 for output
+• Push: Always add to s1
+• Pop/Peek: If s2 is empty, transfer all elements from s1 to s2, then pop/peek from s2
+• This ensures FIFO order (first in, first out) using LIFO stacks
+• Amortized O(1) for all operations
+• Time: O(1) amortized, Space: O(n)
+"""
+
 class MyQueue:
 
     def __init__(self):
