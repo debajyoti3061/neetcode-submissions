@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Coin Change:
+• dp[i] = minimum coins needed to make amount i
+• For each amount, try all coin denominations
+• dp[i] = min(dp[i], 1 + dp[i - coin]) for each valid coin
+• Return dp[amount] or -1 if impossible
+• Time: O(amount * coins), Space: O(amount)
+"""
+
 class Solution:
     def coinChange(self, coins: List[int], amount: int) -> int:
         dp = [amount+1] * (amount+1)

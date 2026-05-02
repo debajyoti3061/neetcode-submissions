@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Trapping Rain Water:
+• Use two pointers with left_max and right_max tracking
+• Move pointer with smaller max value inward
+• Add trapped water based on difference between max and current height
+• Water trapped depends on minimum of left and right boundaries
+• Time: O(n), Space: O(1)
+"""
+
 class Solution:
     def trap(self, height: List[int]) -> int:
         if not height:

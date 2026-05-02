@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - 4Sum:
+• Sort array first to enable two-pointer technique and handle duplicates
+• Use recursive kSum approach: reduce 4Sum to 3Sum to 2Sum
+• Base case is 2Sum using two pointers from both ends
+• Skip duplicates at each level to avoid duplicate quadruplets
+• Time: O(n³), Space: O(1) excluding output
+"""
+
 class Solution:
     def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
 

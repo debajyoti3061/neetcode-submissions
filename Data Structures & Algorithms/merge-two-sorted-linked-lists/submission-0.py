@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Merge Two Sorted Linked Lists:
+• Use dummy node to simplify edge cases
+• Compare values of both list heads, attach smaller one
+• Move pointer of chosen list forward
+• Attach remaining list when one becomes null
+• Time: O(n+m), Space: O(1)
+"""
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):

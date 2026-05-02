@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Asteroid Collision:
+• Use stack to simulate asteroid movements
+• Positive asteroids (moving right) go on stack
+• Negative asteroids (moving left) may collide with stack top
+• Handle collision cases: destruction, survival, mutual destruction
+• Time: O(n), Space: O(n)
+"""
+
 class Solution:
     def asteroidCollision(self, asteroids: List[int]) -> List[int]:
         stack = []

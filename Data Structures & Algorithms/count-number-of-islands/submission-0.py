@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Count Number of Islands:
+• Use DFS or BFS to explore connected components
+• For each unvisited land cell, start DFS and mark all connected land
+• Increment island count for each DFS start
+• Mark visited cells to avoid recounting
+• Time: O(m*n), Space: O(m*n)
+"""
+
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
         result = 0

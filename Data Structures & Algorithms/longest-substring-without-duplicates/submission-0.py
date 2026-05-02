@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Longest Substring Without Duplicates:
+• Use sliding window with set to track characters in current window
+• Expand right pointer and add characters to set
+• When duplicate found, shrink left pointer until duplicate removed
+• Track maximum window size seen
+• Time: O(n), Space: O(min(m,n)) where m is charset size
+"""
+
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         l = 0

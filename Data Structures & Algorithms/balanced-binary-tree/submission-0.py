@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Balanced Binary Tree:
+- For each node, check if height difference between subtrees <= 1
+- Recursively check if left and right subtrees are balanced
+- Use helper function to calculate height of subtree
+- Can optimize to O(n) by calculating height and balance in single pass
+- Time: O(n²) naive, O(n) optimized, Space: O(h)
+"""
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):

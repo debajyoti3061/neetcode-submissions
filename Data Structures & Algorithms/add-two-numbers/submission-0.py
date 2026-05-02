@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Add Two Numbers:
+- Traverse both lists simultaneously, handling carry
+- Create new nodes for sum digits
+- Handle different length lists by treating missing nodes as 0
+- Don't forget final carry if it exists
+- Time: O(max(n,m)), Space: O(max(n,m))
+"""
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):

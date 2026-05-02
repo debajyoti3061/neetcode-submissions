@@ -1,3 +1,12 @@
+"""
+REVISION NOTES - Add Binary:
+- Start from least significant digit (rightmost)
+- Handle carry propagation using modulo and division
+- Reverse strings for easier processing
+- Don't forget final carry if it exists
+- Time: O(max(n,m)), Space: O(max(n,m))
+"""
+
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
         res = ""
@@ -5,10 +14,10 @@ class Solution:
         a,b = a[::-1], b[::-1]
         for i in range(max(len(a),len(b))):
             digitA = ord(a[i])- ord("0") if i < len(a) else 0
-            digitB = ord(b[i])- ord("0") if i < len(b) else 0 
+            digitB = ord(b[i])- ord("0") if i < len(b) else 0
 
             total = digitA + digitB + carry
-            char = str(total%2) 
+            char = str(total%2)
             res = char + res
             carry = total//2
 
